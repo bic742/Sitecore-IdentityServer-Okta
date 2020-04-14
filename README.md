@@ -13,8 +13,8 @@ Deployment structure:
 |   |   |   |   ├── Config
 |   |   |   |   |   ├── Sitecore.Plugin.IdentityProvider.Okta.xml
 |   |   |   |   └── Sitecore.Plugin.manifest
-|   |	├── BoK.FederatedAuth.dll
-|   |	└── BoK.FederatedAuth.pdb
+|   |	├── Okta.FederatedAuth.dll
+|   |	└── Okta.FederatedAuth.pdb
 |   └── license.xml
 ```
 
