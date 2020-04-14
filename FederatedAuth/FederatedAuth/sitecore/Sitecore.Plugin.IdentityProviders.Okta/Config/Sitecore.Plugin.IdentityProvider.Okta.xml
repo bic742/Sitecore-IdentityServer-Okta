@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Settings>
+  <Sitecore>
+    <IdentityServer>
+      <IdentityResources>
+        <SitecoreIdentityResource>
+          <UserClaims>
+            <UserClaim6>groups</UserClaim6>
+          </UserClaims>
+        </SitecoreIdentityResource>
+      </IdentityResources>
+    </IdentityServer>
+    <ExternalIdentityProviders>
+      <IdentityProviders>
+        <Okta type="Sitecore.Plugin.IdentityProviders.IdentityProvider, Sitecore.Plugin.IdentityProviders">
+          <AuthenticationScheme>IdS4-Okta</AuthenticationScheme>
+          <DisplayName>IdentityServer Okta Identity Provider</DisplayName>
+          <Enabled>true</Enabled>
+          <ClientId></ClientId>
+          <ClientSecret></ClientSecret>
+          <Authority></Authority>
+
+          <ClaimsTransformations>
+            <!--Place transformation rules here. -->
+            <ClaimsTransformation1 type="Sitecore.Plugin.IdentityProviders.DefaultClaimsTransformation, Sitecore.Plugin.IdentityProviders">
+              <SourceClaims>
+                <Claim1 type="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn" />
+              </SourceClaims>
+              <NewClaims>
+                <Claim1 type="email" />
+              </NewClaims>
+            </ClaimsTransformation1 >
+            <ClaimsTransformation2 type="Sitecore.Plugin.IdentityProviders.DefaultClaimsTransformation, Sitecore.Plugin.IdentityProviders">
+              <SourceClaims>
+                <Claim1 type="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress" />
+              </SourceClaims>
+              <NewClaims>
+                <Claim1 type="email" />
+              </NewClaims>
+            </ClaimsTransformation2>
+            <ClaimsTransformation3 type="Sitecore.Plugin.IdentityProviders.DefaultClaimsTransformation, Sitecore.Plugin.IdentityProviders">
+              <SourceClaims>
+                <Claim1 type="groups" value="Sitecore Admin" />
+              </SourceClaims>
+              <NewClaims>
+                <Claim1 type="http://www.sitecore.net/identity/claims/isAdmin" value="true" />
+              </NewClaims>
+            </ClaimsTransformation3>
+            <ClaimsTransformation4 type="Sitecore.Plugin.IdentityProviders.DefaultClaimsTransformation, Sitecore.Plugin.IdentityProviders">
+              <SourceClaims>
+                <Claim1 type="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name" />
+              </SourceClaims>
+              <NewClaims>
+                <Claim1 type="name" />
+              </NewClaims>
+            </ClaimsTransformation4>
+          </ClaimsTransformations>
+        </Okta>
+      </IdentityProviders>
+    </ExternalIdentityProviders>
+  </Sitecore>
+</Settings>

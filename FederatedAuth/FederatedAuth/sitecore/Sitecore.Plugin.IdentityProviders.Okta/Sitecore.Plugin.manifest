@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SitecorePlugin PluginName="BoK.FederatedAuth" AssemblyName="BoK.FederatedAuth" Version="1.0.0">
+  <Dependencies>
+    <Dependency name="Sitecore.Plugin.IdentityProviders">4.0.0-r00257</Dependency>
+  </Dependencies>
+  <Tags>
+    <Sitecore>Sitecore</Sitecore>
+  </Tags>
+</SitecorePlugin>
