@@ -1,5 +1,5 @@
 ﻿# Introduction 
-This repository contains the configuration and code necessary for Sitecore Identity Server to authenticat a user via Okta. 
+This repository contains the configuration and code necessary for Sitecore Identity Server to authenticate a CE user via Okta. 
 
 # Getting Started
 Deployment structure:
