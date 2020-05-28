@@ -8,7 +8,7 @@ Deployment structure:
 .
 ├── sitecoreruntime
 |   ├── production
-|   |   ├── sitcore
+|   |   ├── sitecore
 |   |   |   ├── Sitecore.Plugin.IdentityProviders.Okta
 |   |   |   |   ├── Config
 |   |   |   |   |   ├── Sitecore.Plugin.IdentityProvider.Okta.xml
