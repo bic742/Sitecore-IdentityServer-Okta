@@ -8,12 +8,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="sitecore\Sitecore.Plugin.IdentityProviders.Okta\Config\Sitecore.Plugin.IdentityProvider.Okta.xml" />
+    <None Remove="sitecore\Sitecore.Plugin.IdentityProviders.Okta\Config\Sitecore.Plugin.IdentityProviders.Okta.xml" />
     <None Remove="sitecore\Sitecore.Plugin.IdentityProviders.Okta\Sitecore.Plugin.manifest" />
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="sitecore\Sitecore.Plugin.IdentityProviders.Okta\Config\Sitecore.Plugin.IdentityProvider.Okta.xml" />
+    <Content Include="sitecore\Sitecore.Plugin.IdentityProviders.Okta\Config\Sitecore.Plugin.IdentityProviders.Okta.xml" />
     <Content Include="sitecore\Sitecore.Plugin.IdentityProviders.Okta\Sitecore.Plugin.manifest" />
   </ItemGroup>
 
