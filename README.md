@@ -19,4 +19,4 @@ Deployment structure:
 ```
 
 # Okta Setup
-TODO: Add details on how to setup Okta
+Check out this blog post for details on how to configure Okta: https://www.xcentium.com/blog/2020/04/14/federated-auth-via-okta
